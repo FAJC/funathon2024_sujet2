@@ -1,5 +1,5 @@
 import pandas as pd
-from .clean_dataframe import clean_dataframe
+from clean_dataframe import clean_dataframe
 
 def import_airport_data(list_files):
     # Define the data types for each column
