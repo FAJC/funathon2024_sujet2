@@ -1,4 +1,4 @@
-import pyyaml
+import yaml
 
 def create_data_list(source_file):
     """
@@ -11,5 +11,5 @@ def create_data_list(source_file):
         dict: The contents of the YAML file.
     """
     with open(source_file, 'r') as file:
-        catalogue = pyyaml.safe_load(file)
+        catalogue = yaml.safe_load(file)
     return catalogue
