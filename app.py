@@ -5,6 +5,8 @@ import streamlit as st
 import streamlit.components.v1 as components
 from streamlit_folium import st_folium
 
+
+
 import src.import_data as sid
 from src.create_data_list import create_data_list
 from src.divers_functions import (
@@ -21,7 +23,8 @@ MONTHS_LIST = list(range(1, 13))
 default_year = YEARS_LIST[0]
 default_month = MONTHS_LIST[0]
 
-urls = create_data_list("./sources.yml")
+##urls = create_data_list("./sources.yml")
+urls = create_data_list("/home/onyxia/funathon2024_sujet2/sources.yml")
 
 # Load Data ---------------------------------------------
 
